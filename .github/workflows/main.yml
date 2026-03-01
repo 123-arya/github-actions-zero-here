@@ -10,12 +10,12 @@ jobs:
 
     steps:
       - name: Say hello to users
-        run: Arya Parab
+        run: echo "Arya Parab"
   details:
     runs-on: ubuntu-latest
 
     steps:
       - name: use python version
-        run: pyhton --version && docker --version
+        run: echo "pyhton --version && docker --version"
     
   

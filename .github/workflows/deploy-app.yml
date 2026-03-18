@@ -9,7 +9,7 @@ jobs:
         runs-on: self-hosted
 
         env:
-            DOCKERHUB_USER: ${{ vars.DOCKERHUB_TOKEN }}
+            DOCKERHUB_USER: ${{ vars.DOCKERHUB_USER }}
 
         steps:
             - name: Check the code

@@ -5,10 +5,11 @@ on:
 
 jobs:
     deploy:
-        environment:
-            DOCKERHUB_USER: ${{ vars.DOCKERHUB_USER }}
-            
+    
         runs-on: self-hosted
+
+        env:
+            DOCKERHUB_USER: ${{ vars.DOCKERHUB_TOKEN }}
 
         steps:
             - name: Check the code

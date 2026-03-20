@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8001
 
-CMD [ "flake8", "app.py" ]
+CMD [ "python", "app.py" ]

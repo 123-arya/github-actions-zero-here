@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 8001
 
-CMD [ "python", "app.py" ]
+CMD [ "flake8", "app.py" ]

@@ -7,4 +7,8 @@ def home():
     return render_template("index.html")
 
 
+<<<<<<< HEAD
 app.run(host='0.0.0.0', port=8001)
+=======
+app.run(port=8001)
+>>>>>>> a6c71c6 (Fix remove the debug)

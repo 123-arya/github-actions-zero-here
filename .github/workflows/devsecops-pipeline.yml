@@ -1,0 +1,22 @@
+name: devsecops pipeline
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: Trigger code quality check
+              uses: ./.github/workflows/code_quality.yml
+
+            - name: Trigger security scan
+              uses: ./.github/workflows/secret_scan.yml
+
+            - name: Trigger dependency scan
+              uses: ./.github/workflows/dependency_scan.yml
+
+            - name: Trigger docker lint
+              uses: ./.github/workflows/docker-lint.yml

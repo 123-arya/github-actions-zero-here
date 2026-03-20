@@ -1,7 +1,7 @@
-from flake8 import Flake8, render_template
+from flask import Flask, render_template
 
 
-app = Flake8(__name__)
+app = Flask(__name__)
 
 
 @app.route("/")

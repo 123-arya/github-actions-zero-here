@@ -7,4 +7,4 @@ def home():
     return render_template("index.html")
 
 
-app.run(host= '0.0.0.0', port=8001)
+app.run(port=8001)

@@ -1,7 +1,7 @@
 name: Code quality check
 
 on:
-    workflow_call:
+  workflow_dispatch:
 
 jobs:
     code-quality:

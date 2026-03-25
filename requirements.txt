@@ -1,4 +1,4 @@
 flask
 flake8
 bandit
-pygments==2.19.3
+pygments==2.19.2

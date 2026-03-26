@@ -7,14 +7,5 @@ jobs:
     pr-check:
         runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v4
-
-            - name: Setup python 3.12
-              uses: actions/setup-python@v5
-              with:
-                python-version: "3.12"
-            
-            - name: Install dependencies
-              run: pip install -r requirements.txt
+    code-quality:
+            uses: ./.github/workflows/hello.yml

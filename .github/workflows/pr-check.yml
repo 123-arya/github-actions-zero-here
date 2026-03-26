@@ -4,6 +4,5 @@ on:
     pull_request:
         branches: [main]
 jobs:
-
     code-quality:
-            uses: ./.github/workflows/hello.yml
+        uses: ./.github/workflows/hello.yml

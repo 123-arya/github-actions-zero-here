@@ -5,9 +5,12 @@ on:
         branches: [main]
 
 jobs:
-    hello:
+    greet:
         runs-on: ubuntu-latest
 
         steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
             - name: Hello world action step
-              run: echo "Hello world from GitHub Actions!"
+              run: echo "Hello from GitHub Actions!"

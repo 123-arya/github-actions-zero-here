@@ -4,8 +4,6 @@ on:
     pull_request:
         branches: [main]
 jobs:
-    pr-check:
-        runs-on: ubuntu-latest
 
     code-quality:
             uses: ./.github/workflows/hello.yml

@@ -1,0 +1,13 @@
+name: Demo file
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    hello:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Hello world action step
+              run: echo "Hello world from GitHub Actions!"
